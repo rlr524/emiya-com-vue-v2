@@ -8,6 +8,10 @@ module.exports = {
 			colors: {
 				teal: colors.teal,
 				cyan: colors.cyan,
+				emiyablue: "#1E44A9",
+				emiyablue80: "#5177DC",
+				emiyagold: "#FBD77B",
+				emiyablack: "#414141",
 			},
 		},
 	},

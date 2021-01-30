@@ -53,13 +53,13 @@
               <a
                 href="#"
                 class="text-base font-medium text-black hover:text-gray-300"
-                >C.V.</a
+                >Portfolio</a
               >
 
               <a
                 href="#"
                 class="text-base font-medium text-black hover:text-gray-300"
-                >Portfolio</a
+                >About</a
               >
             </div>
           </div>
@@ -72,7 +72,7 @@
             </a> -->
             <a
               href="#"
-              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
+              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-emiyablue hover:bg-emiyablue80"
             >
               Contact Us
             </a>
@@ -91,7 +91,8 @@
           To: "opacity-0 scale-95"
       -->
       <div
-        class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
+        class="absolute top-0 inset-x-0 p-2 transition transform origin-top lg:hidden"
+        v-if="isHidden"
       >
         <div
           class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
@@ -107,6 +108,7 @@
             <div class="-mr-2">
               <button
                 type="button"
+                @click="hideMobileMenu"
                 class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600"
               >
                 <span class="sr-only">Close menu</span>
@@ -147,14 +149,14 @@
                 href="#"
                 class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
                 role="menuitem"
-                >C.V.</a
+                >Portfolio</a
               >
 
               <a
                 href="#"
                 class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
                 role="menuitem"
-                >Portfolio</a
+                >About</a
               >
             </div>
             <div role="none" class="mt-6 px-5">
@@ -180,6 +182,16 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      isHidden: false,
+    };
+  },
+  methods: {
+    hideMobileMenu() {
+      this.isHidden ? !this.isHidden : this.isHidden;
+    },
+  },
 };
 </script>
 
