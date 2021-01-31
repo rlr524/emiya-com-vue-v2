@@ -16,7 +16,9 @@
                   alt=""
                 />
               </a>
-              <div class="-mr-2 flex items-center md:hidden">
+
+              <!-- Open mobile menu button -->
+              <div class="-mr-2 flex items-center lg:hidden">
                 <button
                   type="button"
                   class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
@@ -72,7 +74,7 @@
             </a> -->
             <a
               href="#"
-              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-emiyablue hover:bg-emiyablue80"
+              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-gray-600 to-emiyablue hover:from-gray-500 hover:to-emiyablue80"
             >
               Contact Us
             </a>
@@ -92,7 +94,6 @@
       -->
       <div
         class="absolute top-0 inset-x-0 p-2 transition transform origin-top lg:hidden"
-        v-if="isHidden"
       >
         <div
           class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
@@ -108,7 +109,6 @@
             <div class="-mr-2">
               <button
                 type="button"
-                @click="hideMobileMenu"
                 class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600"
               >
                 <span class="sr-only">Close menu</span>
@@ -184,12 +184,12 @@ export default {
   name: "Header",
   data() {
     return {
-      isHidden: false,
+      isHidden: true,
     };
   },
   methods: {
     hideMobileMenu() {
-      this.isHidden ? !this.isHidden : this.isHidden;
+      this.isHidden ? (this.isHidden = false) : (this.isHidden = true);
     },
   },
 };

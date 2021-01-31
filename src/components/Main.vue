@@ -40,7 +40,7 @@
                       <div class="mt-3 sm:mt-0 sm:ml-3">
                         <button
                           type="submit"
-                          class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+                          class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
                         >
                           Get Started
                         </button>
@@ -63,7 +63,7 @@
               >
                 <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
                 <img
-                  class="w-10/12 lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-10/12 lg:max-w-none"
+                  class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-full lg:max-w-none"
                   src="../assets/illustration_main.svg"
                   alt=""
                 />
