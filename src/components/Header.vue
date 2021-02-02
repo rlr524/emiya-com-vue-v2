@@ -46,20 +46,23 @@
             </div>
             <div class="hidden space-x-8 md:flex md:ml-10">
               <a
-                href="#"
+                href="#services"
                 class="text-base font-medium text-emiyablack hover:text-gray-300"
+                aria-label="Section titled services"
                 >Services</a
               >
 
               <a
-                href="#"
+                href="#about"
                 class="text-base font-medium text-emiyablack hover:text-gray-300"
+                aria-label="Section titled about"
                 >About</a
               >
 
               <a
-                href="#"
+                href="#portfolio"
                 class="text-base font-medium text-emiyablack hover:text-gray-300"
+                aria-label="Section titled portfolio"
                 >Portfolio</a
               >
             </div>
@@ -72,8 +75,9 @@
               Log In
             </a> -->
             <a
-              href="#"
-              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
+              href="/contact"
+              class="block w-full py-3 px-4 mr-36 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+              aria-label="Open contact form"
             >
               Contact Us
             </a>
@@ -110,7 +114,7 @@
               <button
                 type="button"
                 @click="closeMenu"
-                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-emiyablack hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-emiyablack hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emiyablue80"
               >
                 <span class="sr-only">Close menu</span>
                 <!-- Heroicon name: x -->
@@ -140,39 +144,42 @@
           >
             <div class="px-2 space-y-1" role="none">
               <a
-                href="#"
+                href="#services"
                 class="block px-3 py-2 rounded-md text-base font-medium text-emiyablack hover:bg-gray-50"
                 role="menuitem"
+                aria-label="Section titled services"
                 >Services</a
               >
 
               <a
-                href="#"
+                href="#about"
                 class="block px-3 py-2 rounded-md text-base font-medium text-emiyablack hover:bg-gray-50"
                 role="menuitem"
+                aria-label="Section titled about"
                 >About</a
               >
 
               <a
-                href="#"
+                href="#portfolio"
                 class="block px-3 py-2 rounded-md text-base font-medium text-emiyablack hover:bg-gray-50"
                 role="menuitem"
+                aria-label="Section titled portfolio"
                 >Portfolio</a
               >
             </div>
-            <div role="none" class="mt-6 px-5">
+            <div role="none" class="mt-6 px-5 text-center">
               <a
-                href="#"
-                class="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700"
-                >Start free trial</a
+                href="/contact"
+                class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+                >Contact Us</a
               >
             </div>
-            <div role="none" class="mt-6 px-5">
+            <!-- <div role="none" class="mt-6 px-5">
               <p class="text-center text-base font-medium text-gray-500">
                 Existing customer?
                 <a href="#" class="text-gray-900 hover:underline">Login</a>
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
