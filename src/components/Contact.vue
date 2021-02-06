@@ -1,5 +1,5 @@
 <template>
-  <div id="contact"></div>
+  <div id="contact">This will be the contact form modal</div>
 </template>
 
 <script>

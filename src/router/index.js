@@ -8,19 +8,23 @@ Vue.use(VueRouter);
 const routes = [
 	{
 		path: "/",
-		name: "Home",
+		name: "home",
 		component: Home,
 	},
 	{
 		path: "/contact",
-		name: "Contact",
+		name: "contact",
 		component: Contact,
+	},
+	{
+		path: "*",
+		redirect: "/",
 	},
 ];
 
 const router = new VueRouter({
 	mode: "history",
-	base: process.env.BASE_URL,
+	base: "/",
 	routes,
 });
 

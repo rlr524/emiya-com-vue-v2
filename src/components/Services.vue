@@ -1,55 +1,25 @@
 <template>
   <div id="services">
     <!-- Services section  -->
-    <div class="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32">
-      <div
-        class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl"
-      >
-        <div>
-          <h2
-            class="text-base font-semibold tracking-wider text-cyan-600 uppercase"
-          >
-            Serverless
-          </h2>
-          <p
-            class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
-          >
-            No server? No problem.
-          </p>
-          <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-            Phasellus lorem quam molestie id quisque diam aenean nulla in.
-            Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-            condimentum id viverra nulla.
-          </p>
-        </div>
-        <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
-          <img
-            class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-            src="https://tailwindui.com/img/component-images/green-project-app-screenshot.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-    <!-- Feature section with grid -->
     <div class="relative bg-white py-16 sm:py-24 lg:py-32">
       <div
         class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
       >
         <h2
-          class="text-base font-semibold tracking-wider text-cyan-600 uppercase"
+          class="text-base font-semibold tracking-wider text-emiyablue uppercase"
         >
-          Deploy faster
+          Our Services
         </h2>
         <p
           class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
         >
-          Everything you need to deploy your app
+          Your web and mobile app needs in one place
         </p>
         <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in.
-          Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-          condimentum id viverra nulla.
+          From personal and brochure web pages, to e-commerce web apps, to iOS
+          mobile apps, your design, development, and management is handled. No
+          overcomplicated, costly solutions; you're covered: small business to
+          small business, person to person.
         </p>
         <div class="mt-12">
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -58,7 +28,7 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
                     >
                       <!-- Heroicon name: cloud-upload -->
                       <svg
@@ -81,11 +51,12 @@
                   <h3
                     class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                   >
-                    Push to Deploy
+                    Cloud First
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    AWS, Google Cloud, Netlify and others, we deploy to the best
+                    solution for your needs for quick, iterative app deployments
+                    as well as API updates.
                   </p>
                 </div>
               </div>
@@ -96,7 +67,7 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
                     >
                       <!-- Heroicon name: lock-closed -->
                       <svg
@@ -119,11 +90,12 @@
                   <h3
                     class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                   >
-                    SSL Certificates
+                    Security and Resiliency
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    All apps and APIs are secured using best-practices end to
+                    end. Everything is built to be resilient with backups and
+                    redundancies built to your needs.
                   </p>
                 </div>
               </div>
@@ -134,7 +106,7 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
                     >
                       <!-- Heroicon name: refresh -->
                       <svg
@@ -157,11 +129,12 @@
                   <h3
                     class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                   >
-                    Simple Queues
+                    Responsive and Accessible
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    Your web apps will look as good on mobile as on desktop. By
+                    building with accessibility in mind at every step, your web
+                    presence doesn't leave anyone behind.
                   </p>
                 </div>
               </div>

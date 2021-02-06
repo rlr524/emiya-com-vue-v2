@@ -8,14 +8,13 @@
         >
           <div class="flex items-center flex-1">
             <div class="flex items-center justify-between w-full md:w-auto">
-              <a href="#">
-                <span class="sr-only">Workflow</span>
+              <router-link to="/">
                 <img
-                  class="h-8 w-auto sm:h-10"
                   src="../assets/ec_new_logo_tags_small.svg"
+                  class="h-8 w-auto sm:h-10"
                   alt=""
                 />
-              </a>
+              </router-link>
               <div class="-mr-2 flex items-center md:hidden">
                 <button
                   type="button"
@@ -74,13 +73,12 @@
             >
               Log In
             </a> -->
-            <a
-              href="/contact"
+            <router-link
+              to="contact"
               class="block w-full py-3 px-4 mr-36 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-              aria-label="Open contact form"
+              aria-label="open contact form"
+              >Contact Us</router-link
             >
-              Contact Us
-            </a>
           </div>
         </nav>
       </div>
