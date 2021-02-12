@@ -2,7 +2,7 @@
   <div id="about">
     <!-- About section -->
     <div
-      class="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative"
+      class="pb-16 bg-gradient-to-r from-emiyablue80 to-emiyablue lg:pb-0 lg:z-10 lg:relative"
     >
       <div
         class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8"

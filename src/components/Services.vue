@@ -145,7 +145,7 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
                     >
                       <!-- Heroicon name: shield-check -->
                       <svg
@@ -168,11 +168,13 @@
                   <h3
                     class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                   >
-                    Advanced Security
+                    Modern Web and Mobile
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    Your web apps are built using modern Vue.js or React single
+                    page app (SPA) frameworks and libraries, modern style
+                    libraries such as Tailwind and current Apple development
+                    tools.
                   </p>
                 </div>
               </div>
@@ -183,7 +185,7 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
                     >
                       <!-- Heroicon name: cog -->
                       <svg
@@ -212,11 +214,12 @@
                   <h3
                     class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                   >
-                    Powerful API
+                    Powerful APIs
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    Your backend is built using modern, performant technologies,
+                    such as Google's Go language and either RESTful or GraphQL
+                    services.
                   </p>
                 </div>
               </div>
@@ -227,7 +230,7 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
                     >
                       <!-- Heroicon name: server -->
                       <svg
@@ -250,11 +253,12 @@
                   <h3
                     class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
                   >
-                    Database Backups
+                    Modern, Performant Databases
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    Cloud-first database storage built on plaforms suitable to
+                    your app's needs with specialization in MongoDB, Google
+                    Firebase, Amazon Aurora.
                   </p>
                 </div>
               </div>
