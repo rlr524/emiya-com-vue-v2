@@ -33,18 +33,17 @@
             <blockquote>
               <div>
                 <p class="mt-6 text-2xl italic font-medium text-white">
-                  You don't need a "coder", you need a partner
+                  You don't need just a "coder", you need a partner
                 </p>
                 <p class="mt-6 text-2xl font-medium text-white">
                   With 30 years of experience on and leading business and
-                  technical teams with an F500 retailer and 10+ years of
-                  experience building web sites and mobile apps, I am able to
-                  bring both a business and developer viewpoint to your project.
-                  I specialize in single-page apps using the Vue.js framework,
-                  backends/APIs using both Node.js and the Go language, as well
-                  as mobile iOS apps. I can also consult on and support hardware
-                  (network, POS) build out, vendor selection and general tech
-                  needs.
+                  technical teams with an F500 retailer and broad knowledge in
+                  web and mobile app technologies, I am able to bring both a
+                  business and developer viewpoint to your project. I specialize
+                  in single-page apps using the Vue.js framework, backends/APIs
+                  using both Node.js and the Go language, as well as mobile iOS
+                  apps. I can also consult on and support hardware (network,
+                  POS) build out, vendor selection and general tech needs.
                 </p>
               </div>
             </blockquote>
