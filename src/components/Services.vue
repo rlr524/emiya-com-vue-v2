@@ -8,7 +8,7 @@
         <h2
           class="text-base font-semibold tracking-wider text-emiyablue uppercase"
         >
-          Our Services
+          Services
         </h2>
         <p
           class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"

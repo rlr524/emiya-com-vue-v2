@@ -6,19 +6,20 @@
         class="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
       >
         <h2
-          class="text-base font-semibold tracking-wider text-cyan-600 uppercase"
+          class="text-base font-semibold tracking-wider text-emiyablue uppercase"
         >
-          Learn
+          Portfolio
         </h2>
         <p
           class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
         >
-          Helpful Resources
+          See some of the results for yourself
         </p>
         <p class="mt-5 mx-auto max-w-prose text-xl text-gray-500">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in.
-          Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-          condimentum id viverra nulla.
+          Many small business need a simple "brochure" site, a place where
+          you'll be found on Google, Facebook, Yelp or Twitter. Others need an
+          e-commerce integration, customer relationship management or robust
+          content management. Here are a few examples of my work.
         </p>
       </div>
       <div

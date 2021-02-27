@@ -16,14 +16,16 @@
                   <span class="text-white block">You mind your business</span>
                   <span
                     class="bg-clip-text text-transparent bg-gradient-to-r from-white to-emiyablue block"
-                    >we'll mind your tech</span
+                    >I'll mind your tech</span
                   >
                 </h1>
                 <p
                   class="mt-3 text-base text-white sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
                 >
-                  You're not in business to write code. Let us build and manage
-                  your web and mobile app presence.
+                  You're not in business to write code, manage tech
+                  infrastructure or deal with tech vendors. Let me build and
+                  manage your web and mobile app presence as well as handle
+                  support of your technology "back of the house".
                 </p>
                 <div class="mt-10 sm:mt-12">
                   <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
@@ -47,8 +49,8 @@
                       </div>
                     </div>
                     <p class="mt-3 text-sm text-white sm:mt-4">
-                      Let's talk about what you need and how we can help. By
-                      providing your email, you agree to our
+                      Let's talk about what you need and how I can help. By
+                      providing your email, you agree to Emiya Consulting's
                       <a href="#" class="font-medium text-white underline"
                         >terms of service</a
                       >.
