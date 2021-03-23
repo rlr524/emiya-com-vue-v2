@@ -7,7 +7,7 @@
           aria-label="Global"
         >
           <div class="flex items-center flex-1">
-            <div class="flex items-center justify-between w-full md:w-auto">
+            <div class="flex justify-between w-full">
               <router-link to="/">
                 <img
                   src="../assets/ec_new_logo_tags_small.svg"
@@ -15,7 +15,7 @@
                   alt=""
                 />
               </router-link>
-              <div class="-mr-2 flex items-center md:hidden">
+              <div class="mr-2 flex items-center md:hidden">
                 <button
                   type="button"
                   @click="openMenu"
@@ -43,7 +43,7 @@
                 </button>
               </div>
             </div>
-            <div class="hidden space-x-8 md:flex md:ml-10">
+            <div class="space-x-8 md:flex md:ml-10">
               <a
                 href="#services"
                 class="text-base font-medium text-emiyablack hover:text-gray-300"
@@ -67,15 +67,9 @@
             </div>
           </div>
           <div class="hidden md:flex md:items-center md:space-x-6">
-            <!-- <a
-              href="#"
-              class="text-base font-medium text-emiyablack hover:text-gray-300"
-            >
-              Log In
-            </a> -->
             <router-link
               to="contact"
-              class="block w-full py-3 px-4 mr-36 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+              class="block w-full py-3 px-4 ml-8 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
               aria-label="open contact form"
               >Contact Us</router-link
             >
