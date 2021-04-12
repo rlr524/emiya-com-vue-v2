@@ -48,7 +48,7 @@
             </a>
 
             <a
-              href="https://github.com/Emiya-Consulting"
+              href="https://github.com/rlr524"
               target="_blank"
               rel="noreferrer"
               class="text-gray-400 hover:text-gray-500"

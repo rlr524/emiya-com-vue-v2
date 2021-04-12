@@ -50,10 +50,9 @@
                     </div>
                     <p class="mt-3 text-sm text-white sm:mt-4">
                       Let's talk about what you need and how we can help. By
-                      providing your email, you agree to Emiya Consulting's
-                      <a href="#" class="font-medium text-white underline"
-                        >terms of service</a
-                      >.
+                      providing your email address, you agree to receive emails
+                      from Emiya Consulting. Use the "Contact Us" button above
+                      if you wish to enter more detail about your needs.
                     </p>
                   </form>
                 </div>

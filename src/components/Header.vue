@@ -15,64 +15,29 @@
                   alt=""
                 />
               </router-link>
-              <div class="mr-2 flex items-center md:hidden">
-                <button
-                  type="button"
-                  @click="openMenu"
-                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-emiyablack hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
-                  id="main-menu"
-                  aria-haspopup="true"
-                >
-                  <span class="sr-only">Open main menu</span>
-                  <!-- Heroicon name: menu -->
-                  <svg
-                    class="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                </button>
-              </div>
             </div>
             <div class="space-x-8 md:flex md:ml-10">
               <a
-                href="#services"
+                href="/#services"
                 class="text-base font-medium text-emiyablack hover:text-gray-300"
                 aria-label="Section titled services"
                 >Services</a
               >
 
               <a
-                href="#about"
+                href="/#about"
                 class="text-base font-medium text-emiyablack hover:text-gray-300"
                 aria-label="Section titled about"
                 >About</a
               >
 
-              <a
-                href="#portfolio"
+              <router-link
+                to="contact"
                 class="text-base font-medium text-emiyablack hover:text-gray-300"
-                aria-label="Section titled portfolio"
-                >Portfolio</a
+                aria-label="open contact form"
+                >Contact</router-link
               >
             </div>
-          </div>
-          <div class="hidden md:flex md:items-center md:space-x-6">
-            <router-link
-              to="contact"
-              class="block w-full py-3 px-4 ml-8 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-              aria-label="open contact form"
-              >Contact Us</router-link
-            >
           </div>
         </nav>
       </div>

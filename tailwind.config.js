@@ -8,6 +8,7 @@ module.exports = {
 			colors: {
 				teal: colors.teal,
 				cyan: colors.cyan,
+				grape: colors.purple,
 				emiyablue: "#1E44A9",
 				emiyablue80: "#5177DC",
 				emiyagold: "#FBD77B",
