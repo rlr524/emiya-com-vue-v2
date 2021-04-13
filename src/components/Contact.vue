@@ -205,7 +205,7 @@ const taskId = `${dateNow}ec_crm`;
 const newContact = {
   id: taskId,
   custom_id: {},
-  name: "Form Submission - #2021-01-19T01:48:18Z",
+  name: `Form Submission - ${dateNow.toString()}`,
   text_content: {},
   description: {},
   status: {
@@ -215,17 +215,16 @@ const newContact = {
     orderindex: 0,
   },
   orderindex: "1.00000000000000000000000000000000",
-  date_created: "1611020898139",
-  date_updated: "1611020898187",
+  date_created: dateNow,
+  date_updated: dateNow,
   date_closed: {},
   archived: false,
   creator: {
     id: -1,
-    username: "ClickBot",
+    username: "Emiya Form User",
     color: "#827718",
-    email: "clickbot@clickup.com",
-    profilePicture:
-      "https://attachments.clickup.com/t1242830/995c776f-cdb7-4dc0-87ab-d65221824835/clickbot.svg",
+    email: "admin@emiyaconsulting.com",
+    profilePicture: "",
   },
   assignees: [
     {
@@ -254,7 +253,7 @@ const newContact = {
       type_config: {},
       date_created: "1611001409708",
       hide_from_guests: false,
-      value: "",
+      value: this.company,
       required: false,
     },
     {
@@ -264,7 +263,7 @@ const newContact = {
       type_config: {},
       date_created: "1618267830880",
       hide_from_guests: false,
-      value: "",
+      value: this.lname,
       required: false,
     },
     {
@@ -274,8 +273,8 @@ const newContact = {
       type_config: {},
       date_created: "1610999617569",
       hide_from_guests: false,
-      value: "",
-      required: false,
+      value: this.email,
+      required: true,
     },
     {
       id: "47bb86f4-5c5d-4065-ab47-3213f2836119",
@@ -284,7 +283,7 @@ const newContact = {
       type_config: {},
       date_created: "1611001435778",
       hide_from_guests: false,
-      value: "",
+      value: this.fname,
       required: false,
     },
     {
@@ -294,7 +293,7 @@ const newContact = {
       type_config: {},
       date_created: "1610999638662",
       hide_from_guests: false,
-      value: "",
+      value: this.phone,
       required: false,
     },
     {
@@ -304,7 +303,7 @@ const newContact = {
       type_config: {},
       date_created: "1610999667244",
       hide_from_guests: false,
-      value: "Test",
+      value: this.description,
       required: false,
     },
     {
@@ -314,6 +313,7 @@ const newContact = {
       type_config: {},
       date_created: "1618267916546",
       hide_from_guests: false,
+      value: this.howhear,
       required: false,
     },
   ],
