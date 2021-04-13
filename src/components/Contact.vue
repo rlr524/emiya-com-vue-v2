@@ -63,11 +63,17 @@
                   </div>
                 </div>
                 <div class="sm:col-span-2">
-                  <label
-                    for="email"
-                    class="block text-base font-medium text-gray-700"
-                    >Email</label
-                  >
+                  <div class="flex justify-between">
+                    <label
+                      for="email"
+                      class="block text-base font-medium text-gray-700"
+                      >Email</label
+                    >
+                    <span id="email_description" class="text-sm text-gray-500"
+                      >Required</span
+                    >
+                  </div>
+
                   <div class="mt-1">
                     <input
                       id="email"
@@ -87,14 +93,12 @@
                       class="block text-base font-medium text-gray-700"
                       >Company</label
                     >
-                    <span id="phone_description" class="text-sm text-gray-500"
-                      >Optional</span
-                    >
                   </div>
 
                   <div class="mt-1">
                     <input
-                      type="text"
+                      type="tel"
+                      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                       name="company"
                       id="company"
                       v-model="company"
@@ -154,9 +158,6 @@
                       class="block text-base font-medium text-gray-700"
                       >How did you hear about us?</label
                     >
-                    <span id="phone_description" class="text-sm text-gray-500"
-                      >Optional</span
-                    >
                   </div>
 
                   <div class="mt-1">
@@ -188,162 +189,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
-const instance = axios.create({
-  baseURL: "https://api.clickup.com/api/v2/list/56922044/task",
-  timeout: 1000,
-  headers: {
-    Authorization: process.env.VUE_APP_CLICK_API_TOKEN,
-    "Content-Type": "application/json",
-  },
-});
-
-const dateNow = Date.now();
-const dueDate = dateNow + 64800000;
-const taskId = `${dateNow}ec_crm`;
-const newContact = {
-  id: taskId,
-  custom_id: {},
-  name: `Form Submission - ${dateNow.toString()}`,
-  text_content: {},
-  description: {},
-  status: {
-    status: "Open",
-    color: "#d3d3d3",
-    type: "open",
-    orderindex: 0,
-  },
-  orderindex: "1.00000000000000000000000000000000",
-  date_created: dateNow,
-  date_updated: dateNow,
-  date_closed: {},
-  archived: false,
-  creator: {
-    id: -1,
-    username: "Emiya Form User",
-    color: "#827718",
-    email: "admin@emiyaconsulting.com",
-    profilePicture: "",
-  },
-  assignees: [
-    {
-      id: 10621784,
-      username: "Rob Ranf",
-      color: "#0388d1",
-      initials: "RR",
-      email: "rob@emiyaconsulting.com",
-      profilePicture: {},
-    },
-  ],
-  watchers: [],
-  checklists: [],
-  tags: [],
-  parent: {},
-  priority: {},
-  due_date: dueDate,
-  start_date: {},
-  points: {},
-  time_estimate: {},
-  custom_fields: [
-    {
-      id: "505762ef-f133-45fa-8d89-4a819df6843b",
-      name: "Business Name",
-      type: "short_text",
-      type_config: {},
-      date_created: "1611001409708",
-      hide_from_guests: false,
-      value: this.company,
-      required: false,
-    },
-    {
-      id: "113e9c11-9e8d-4343-8e3d-e3e8a386460c",
-      name: "CONTACT LAST NAME",
-      type: "short_text",
-      type_config: {},
-      date_created: "1618267830880",
-      hide_from_guests: false,
-      value: this.lname,
-      required: false,
-    },
-    {
-      id: "5b44d46a-3236-417c-868a-4bf18d9d9f53",
-      name: "Contact Email",
-      type: "email",
-      type_config: {},
-      date_created: "1610999617569",
-      hide_from_guests: false,
-      value: this.email,
-      required: true,
-    },
-    {
-      id: "47bb86f4-5c5d-4065-ab47-3213f2836119",
-      name: "Contact First Name",
-      type: "short_text",
-      type_config: {},
-      date_created: "1611001435778",
-      hide_from_guests: false,
-      value: this.fname,
-      required: false,
-    },
-    {
-      id: "539c54e6-19d3-4153-9421-2ca56d978baf",
-      name: "Contact Phone",
-      type: "phone",
-      type_config: {},
-      date_created: "1610999638662",
-      hide_from_guests: false,
-      value: this.phone,
-      required: false,
-    },
-    {
-      id: "37ddb56e-850d-40be-9a6c-ffabd8ecd204",
-      name: "Description",
-      type: "text",
-      type_config: {},
-      date_created: "1610999667244",
-      hide_from_guests: false,
-      value: this.description,
-      required: false,
-    },
-    {
-      id: "10577781-3a4d-40f8-b432-659b8a6ff73d",
-      name: "HOW DID YOU HEAR",
-      type: "text",
-      type_config: {},
-      date_created: "1618267916546",
-      hide_from_guests: false,
-      value: this.howhear,
-      required: false,
-    },
-  ],
-  dependencies: [],
-  linked_tasks: [],
-  team_id: "8462752",
-  url: `https://app.clickup.com/t/${this.id}`,
-  permission_level: "create",
-  list: {
-    id: "56922044",
-    name: "Contacts",
-    access: true,
-  },
-  project: {
-    id: "27422263",
-    name: "hidden",
-    hidden: true,
-    access: true,
-  },
-  folder: {
-    id: "27422263",
-    name: "hidden",
-    hidden: true,
-    access: true,
-  },
-  space: {
-    id: "12788925",
-  },
-};
-
 export default {
   name: "Contact",
   data() {
@@ -358,12 +203,75 @@ export default {
     };
   },
   methods: {
-    onSubmit(e) {
+    async onSubmit(e) {
       e.preventDefault();
       if (!this.email) {
         alert("Please enter an email address, all other fields are optional.");
         return;
       }
+
+      let request = new XMLHttpRequest();
+      request.open("POST", "https://api.clickup.com/api/v2/list/8462752/task");
+      request.setRequestHeader(
+        "Authorization",
+        process.env.VUE_APP_VUE_APP_CLICK_API_TOKEN
+      );
+      request.setRequestHeader("Content-Type", "application/json");
+
+      request.onreadystatechange = function () {
+        if (this.readyState === 4) {
+          console.log("Status", this.status);
+          console.log("Headers", this.getAllResponseHeaders);
+          console.log("Body", this.responseText);
+        }
+      };
+
+      const dateNow = Date.now();
+      const dueDate = dateNow + 64800000;
+      const taskId = `${dateNow}ec_crm`;
+      const newContact = {
+        custom_id: taskId,
+        name: `Form Submission - ${taskId}`,
+        description: "New Contact Form Submission from .com",
+        status: "Open",
+        assignees: [10621784],
+        tags: null,
+        parent: null,
+        priority: 3,
+        due_date: dueDate,
+        start_date: dateNow,
+        time_estimate: 8640000,
+        custom_fields: [
+          {
+            id: "505762ef-f133-45fa-8d89-4a819df6843b",
+            value: this.company,
+          },
+          {
+            id: "113e9c11-9e8d-4343-8e3d-e3e8a386460c",
+            value: this.lname,
+          },
+          {
+            id: "5b44d46a-3236-417c-868a-4bf18d9d9f53",
+            value: this.email,
+          },
+          {
+            id: "47bb86f4-5c5d-4065-ab47-3213f2836119",
+            value: this.fname,
+          },
+          {
+            id: "539c54e6-19d3-4153-9421-2ca56d978baf",
+            value: this.phone,
+          },
+          {
+            id: "37ddb56e-850d-40be-9a6c-ffabd8ecd204",
+            value: this.description,
+          },
+          {
+            id: "10577781-3a4d-40f8-b432-659b8a6ff73d",
+            value: this.howhear,
+          },
+        ],
+      };
 
       (this.fname = ""),
         (this.lname = ""),
@@ -373,14 +281,7 @@ export default {
         (this.description = ""),
         (this.howhear = "");
 
-      instance
-        .post("/contact", newContact)
-        .then(function (res) {
-          console.log(res);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
+      await request.send(JSON.stringify(newContact));
     },
   },
 };
