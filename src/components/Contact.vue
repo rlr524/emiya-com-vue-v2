@@ -172,6 +172,7 @@
                 <div class="text-right sm:col-span-2">
                   <button
                     type="submit"
+                    @click="onSubmit"
                     class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md py-3 px-4 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
                   >
                     Submit
@@ -187,6 +188,162 @@
 </template>
 
 <script>
+import axios from "axios";
+
+const instance = axios.create({
+  baseURL: "https://api.clickup.com/api/v2/list/56922044/task",
+  timeout: 1000,
+  headers: {
+    Authorization: process.env.VUE_APP_CLICK_API_TOKEN,
+    "Content-Type": "application/json",
+  },
+});
+
+const dateNow = Date.now();
+const dueDate = dateNow + 64800000;
+const taskId = `${dateNow}ec_crm`;
+const newContact = {
+  id: taskId,
+  custom_id: {},
+  name: "Form Submission - #2021-01-19T01:48:18Z",
+  text_content: {},
+  description: {},
+  status: {
+    status: "Open",
+    color: "#d3d3d3",
+    type: "open",
+    orderindex: 0,
+  },
+  orderindex: "1.00000000000000000000000000000000",
+  date_created: "1611020898139",
+  date_updated: "1611020898187",
+  date_closed: {},
+  archived: false,
+  creator: {
+    id: -1,
+    username: "ClickBot",
+    color: "#827718",
+    email: "clickbot@clickup.com",
+    profilePicture:
+      "https://attachments.clickup.com/t1242830/995c776f-cdb7-4dc0-87ab-d65221824835/clickbot.svg",
+  },
+  assignees: [
+    {
+      id: 10621784,
+      username: "Rob Ranf",
+      color: "#0388d1",
+      initials: "RR",
+      email: "rob@emiyaconsulting.com",
+      profilePicture: {},
+    },
+  ],
+  watchers: [],
+  checklists: [],
+  tags: [],
+  parent: {},
+  priority: {},
+  due_date: dueDate,
+  start_date: {},
+  points: {},
+  time_estimate: {},
+  custom_fields: [
+    {
+      id: "505762ef-f133-45fa-8d89-4a819df6843b",
+      name: "Business Name",
+      type: "short_text",
+      type_config: {},
+      date_created: "1611001409708",
+      hide_from_guests: false,
+      value: "",
+      required: false,
+    },
+    {
+      id: "113e9c11-9e8d-4343-8e3d-e3e8a386460c",
+      name: "CONTACT LAST NAME",
+      type: "short_text",
+      type_config: {},
+      date_created: "1618267830880",
+      hide_from_guests: false,
+      value: "",
+      required: false,
+    },
+    {
+      id: "5b44d46a-3236-417c-868a-4bf18d9d9f53",
+      name: "Contact Email",
+      type: "email",
+      type_config: {},
+      date_created: "1610999617569",
+      hide_from_guests: false,
+      value: "",
+      required: false,
+    },
+    {
+      id: "47bb86f4-5c5d-4065-ab47-3213f2836119",
+      name: "Contact First Name",
+      type: "short_text",
+      type_config: {},
+      date_created: "1611001435778",
+      hide_from_guests: false,
+      value: "",
+      required: false,
+    },
+    {
+      id: "539c54e6-19d3-4153-9421-2ca56d978baf",
+      name: "Contact Phone",
+      type: "phone",
+      type_config: {},
+      date_created: "1610999638662",
+      hide_from_guests: false,
+      value: "",
+      required: false,
+    },
+    {
+      id: "37ddb56e-850d-40be-9a6c-ffabd8ecd204",
+      name: "Description",
+      type: "text",
+      type_config: {},
+      date_created: "1610999667244",
+      hide_from_guests: false,
+      value: "Test",
+      required: false,
+    },
+    {
+      id: "10577781-3a4d-40f8-b432-659b8a6ff73d",
+      name: "HOW DID YOU HEAR",
+      type: "text",
+      type_config: {},
+      date_created: "1618267916546",
+      hide_from_guests: false,
+      required: false,
+    },
+  ],
+  dependencies: [],
+  linked_tasks: [],
+  team_id: "8462752",
+  url: `https://app.clickup.com/t/${this.id}`,
+  permission_level: "create",
+  list: {
+    id: "56922044",
+    name: "Contacts",
+    access: true,
+  },
+  project: {
+    id: "27422263",
+    name: "hidden",
+    hidden: true,
+    access: true,
+  },
+  folder: {
+    id: "27422263",
+    name: "hidden",
+    hidden: true,
+    access: true,
+  },
+  space: {
+    id: "12788925",
+  },
+};
+
 export default {
   name: "Contact",
   data() {
@@ -207,16 +364,6 @@ export default {
         alert("Please enter an email address, all other fields are optional.");
         return;
       }
-      const newContact = {
-        fname: this.fname,
-        lname: this.lname,
-        email: this.email,
-        company: this.company,
-        phone: this.phone,
-        description: this.description,
-        howhear: this.howhear,
-      };
-      this.$emit("add-contact", newContact);
 
       (this.fname = ""),
         (this.lname = ""),
@@ -225,6 +372,15 @@ export default {
         (this.phone = ""),
         (this.description = ""),
         (this.howhear = "");
+
+      instance
+        .post("/contact", newContact)
+        .then(function (res) {
+          console.log(res);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
     },
   },
 };
