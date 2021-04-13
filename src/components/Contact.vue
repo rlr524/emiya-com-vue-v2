@@ -203,7 +203,7 @@ export default {
     };
   },
   methods: {
-    async onSubmit(e) {
+    onSubmit(e) {
       e.preventDefault();
       if (!this.email) {
         alert("Please enter an email address, all other fields are optional.");
@@ -214,7 +214,7 @@ export default {
       request.open("POST", "https://api.clickup.com/api/v2/list/8462752/task");
       request.setRequestHeader(
         "Authorization",
-        process.env.VUE_APP_VUE_APP_CLICK_API_TOKEN
+        process.env.VUE_APP_CLICK_API_TOKEN
       );
       request.setRequestHeader("Content-Type", "application/json");
 
@@ -281,7 +281,7 @@ export default {
         (this.description = ""),
         (this.howhear = "");
 
-      await request.send(JSON.stringify(newContact));
+      request.send(JSON.stringify(newContact));
     },
   },
 };
