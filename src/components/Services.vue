@@ -54,9 +54,9 @@
                     Cloud First
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
-                    AWS, Google Cloud, Netlify and others, we deploy to the best
-                    solution for your needs for quick, iterative app deployments
-                    as well as API updates.
+                    AWS, Google Cloud, Netlify and others; we deploy to the best
+                    solution, including containerization, for your needs for
+                    quick, iterative app deployments as well as API updates.
                   </p>
                 </div>
               </div>
@@ -94,8 +94,9 @@
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
                     All apps and APIs are secured using best-practices end to
-                    end. Everything is built to be resilient with backups and
-                    redundancies built to your needs.
+                    end with the privacy of you and your customers' data as our
+                    first priority. Everything is built to be resilient with
+                    backups and redundancies built to your needs.
                   </p>
                 </div>
               </div>
@@ -132,9 +133,10 @@
                     Responsive and Accessible
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
-                    Your web apps will look as good on mobile as on desktop. By
-                    building with accessibility in mind at every step, your web
-                    presence doesn't leave anyone behind.
+                    The modern web requires apps that look as good on mobile as
+                    on desktop. Plus, by building with accessibility in mind at
+                    every step, your web presence doesn't leave any of your
+                    potential customers behind.
                   </p>
                 </div>
               </div>
@@ -172,9 +174,9 @@
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
                     Your web apps are built using modern Vue.js or React single
-                    page app (SPA) frameworks and libraries, modern style
-                    libraries such as Tailwind and current Apple development
-                    tools.
+                    page app (SPA) frameworks, styling and libraries. Your
+                    existing site (Wordpress, Drupal) can also maintained or
+                    updated depending on your needs.
                   </p>
                 </div>
               </div>
@@ -219,7 +221,8 @@
                   <p class="mt-5 text-base text-gray-500">
                     Your backend is built using modern, performant technologies,
                     such as Google's Go language and either RESTful or GraphQL
-                    services.
+                    web services so your web and mobile apps can easily share
+                    the same content and data.
                   </p>
                 </div>
               </div>
@@ -258,7 +261,8 @@
                   <p class="mt-5 text-base text-gray-500">
                     Cloud-first database storage built on plaforms suitable to
                     your app's needs with specialization in MongoDB, Google
-                    Firebase, Amazon Aurora.
+                    Firebase and Realtime DB, Amazon Aurora, MySQL and
+                    PostgreSQL.
                   </p>
                 </div>
               </div>

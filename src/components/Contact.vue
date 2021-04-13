@@ -39,8 +39,9 @@
                       type="text"
                       name="first_name"
                       id="first_name"
+                      v-model="fname"
                       autocomplete="given-name"
-                      class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md"
+                      class="block w-full shadow-sm sm:text-sm focus:ring-emiyablue focus:border-emiyablue border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -55,8 +56,9 @@
                       type="text"
                       name="last_name"
                       id="last_name"
+                      v-model="lname"
                       autocomplete="family-name"
-                      class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md"
+                      class="block w-full shadow-sm sm:text-sm focus:ring-emiyablue focus:border-emiyablue border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -69,10 +71,12 @@
                   <div class="mt-1">
                     <input
                       id="email"
+                      v-model="email"
                       name="email"
                       type="email"
                       autocomplete="email"
-                      class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md"
+                      required
+                      class="block w-full shadow-sm sm:text-sm focus:ring-emiyablue focus:border-emiyablue border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -93,8 +97,9 @@
                       type="text"
                       name="company"
                       id="company"
+                      v-model="company"
                       autocomplete="organization"
-                      class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md"
+                      class="block w-full shadow-sm sm:text-sm focus:ring-emiyablue focus:border-emiyablue border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -111,9 +116,10 @@
                       type="text"
                       name="phone"
                       id="phone"
+                      v-model="phone"
                       autocomplete="tel"
                       aria-describedby="phone_description"
-                      class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md"
+                      class="block w-full shadow-sm sm:text-sm focus:ring-emiyablue focus:border-emiyablue border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -133,10 +139,11 @@
                   <div class="mt-1">
                     <textarea
                       id="how_can_we_help"
+                      v-model="description"
                       name="how_can_we_help"
                       aria-describedby="how_can_we_help_description"
                       rows="4"
-                      class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md"
+                      class="block w-full shadow-sm sm:text-sm focus:ring-emiyablue focus:border-emiyablue border-gray-300 rounded-md"
                     ></textarea>
                   </div>
                 </div>
@@ -157,14 +164,15 @@
                       type="text"
                       name="how_did_you_hear_about_us"
                       id="how_did_you_hear_about_us"
-                      class="shadow-sm focus:ring-grape-500 focus:border-grape-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      v-model="howhear"
+                      class="shadow-sm focus:ring-emiyablue focus:border-emiyablue block w-full sm:text-sm border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
                 <div class="text-right sm:col-span-2">
                   <button
                     type="submit"
-                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-grape-600 hover:bg-grape-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-grape-500"
+                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md py-3 px-4 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
                   >
                     Submit
                   </button>
@@ -181,6 +189,44 @@
 <script>
 export default {
   name: "Contact",
+  data() {
+    return {
+      fname: "",
+      lname: "",
+      email: "",
+      company: "",
+      phone: "",
+      description: "",
+      howhear: "",
+    };
+  },
+  methods: {
+    onSubmit(e) {
+      e.preventDefault();
+      if (!this.email) {
+        alert("Please enter an email address, all other fields are optional.");
+        return;
+      }
+      const newContact = {
+        fname: this.fname,
+        lname: this.lname,
+        email: this.email,
+        company: this.company,
+        phone: this.phone,
+        description: this.description,
+        howhear: this.howhear,
+      };
+      this.$emit("add-contact", newContact);
+
+      (this.fname = ""),
+        (this.lname = ""),
+        (this.email = ""),
+        (this.company = ""),
+        (this.phone = ""),
+        (this.description = ""),
+        (this.howhear = "");
+    },
+  },
 };
 </script>
 

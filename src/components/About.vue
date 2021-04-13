@@ -33,7 +33,7 @@
             <blockquote>
               <div>
                 <p class="mt-6 text-2xl italic font-medium text-white">
-                  You don't need just a "coder", you need a partner
+                  You don't need a "coder", you need a partner
                 </p>
                 <p class="mt-6 text-2xl font-medium text-white">
                   With 30 years of experience on and leading business and
