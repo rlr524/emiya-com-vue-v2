@@ -11,6 +11,7 @@
 import Main from "@/components/Main.vue";
 import Services from "@/components/Services.vue";
 import About from "@/components/About.vue";
+
 // import Portfolio from "@/components/Portfolio.vue";
 
 export default {

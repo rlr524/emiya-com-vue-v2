@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Contact from "../components/Contact.vue";
+import Contact2 from "../components/Contact2.vue";
 
 Vue.use(VueRouter);
 
@@ -14,7 +14,7 @@ const routes = [
 	{
 		path: "/contact",
 		name: "contact",
-		component: Contact,
+		component: Contact2,
 	},
 	{
 		path: "*",

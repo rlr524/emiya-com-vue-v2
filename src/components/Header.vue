@@ -30,13 +30,6 @@
                 aria-label="Section titled about"
                 >About</a
               >
-
-              <router-link
-                to="contact"
-                class="text-base font-medium text-emiyablack hover:text-gray-300"
-                aria-label="open contact form"
-                >Contact</router-link
-              >
             </div>
           </div>
         </nav>
