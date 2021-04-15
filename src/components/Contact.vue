@@ -209,22 +209,6 @@ export default {
         alert("Please enter an email address, all other fields are optional.");
         return;
       }
-      async function postContact(url = "", data) {
-        const response = await fetch(url, {
-          method: "POST",
-          mode: "cors",
-          cache: "no-cache",
-          credentials: "same-origin",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: process.env.VUE_APP_CLICK_API_TOKEN,
-          },
-          redirect: "follow",
-          referrerPolicy: "no-referrer",
-          body: JSON.stringify(data),
-        });
-        return response.json();
-      }
       const dateNow = Date.now();
       const dueDate = dateNow + 64800000;
       const taskId = `${dateNow}ec_crm`;
@@ -271,6 +255,21 @@ export default {
           },
         ],
       };
+      function postContact(url, data) {
+        const response = fetch(url, {
+          method: "POST",
+          mode: "cors",
+          cache: "no-cache",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: process.env.VUE_APP_CLICK_API_TOKEN,
+          },
+          redirect: "follow",
+          referrerPolicy: "no-referrer",
+          body: JSON.stringify(data),
+        });
+        return response;
+      }
 
       postContact(
         "https://api.clickup.com/api/v2/list/8462752/task",
