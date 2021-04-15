@@ -24,7 +24,7 @@
                 Let's work together
               </h2>
               <form
-                action="#"
+                action=""
                 method="POST"
                 class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
               >
@@ -209,23 +209,22 @@ export default {
         alert("Please enter an email address, all other fields are optional.");
         return;
       }
-
-      let request = new XMLHttpRequest();
-      request.open("POST", "https://api.clickup.com/api/v2/list/8462752/task");
-      request.setRequestHeader(
-        "Authorization",
-        process.env.VUE_APP_CLICK_API_TOKEN
-      );
-      request.setRequestHeader("Content-Type", "application/json");
-
-      request.onreadystatechange = function () {
-        if (this.readyState === 4) {
-          console.log("Status", this.status);
-          console.log("Headers", this.getAllResponseHeaders);
-          console.log("Body", this.responseText);
-        }
-      };
-
+      async function postContact(url = "", data) {
+        const response = await fetch(url, {
+          method: "POST",
+          mode: "cors",
+          cache: "no-cache",
+          credentials: "same-origin",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: process.env.VUE_APP_CLICK_API_TOKEN,
+          },
+          redirect: "follow",
+          referrerPolicy: "no-referrer",
+          body: JSON.stringify(data),
+        });
+        return response.json();
+      }
       const dateNow = Date.now();
       const dueDate = dateNow + 64800000;
       const taskId = `${dateNow}ec_crm`;
@@ -240,7 +239,7 @@ export default {
         priority: 3,
         due_date: dueDate,
         start_date: dateNow,
-        time_estimate: 8640000,
+        time_estimate: 1800000,
         custom_fields: [
           {
             id: "505762ef-f133-45fa-8d89-4a819df6843b",
@@ -273,6 +272,13 @@ export default {
         ],
       };
 
+      postContact(
+        "https://api.clickup.com/api/v2/list/8462752/task",
+        newContact
+      ).then((data) => {
+        console.log(data);
+      });
+
       (this.fname = ""),
         (this.lname = ""),
         (this.email = ""),
@@ -280,8 +286,6 @@ export default {
         (this.phone = ""),
         (this.description = ""),
         (this.howhear = "");
-
-      request.send(JSON.stringify(newContact));
     },
   },
 };
