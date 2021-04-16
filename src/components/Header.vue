@@ -7,7 +7,7 @@
           aria-label="Global"
         >
           <div class="flex items-center flex-1">
-            <div class="flex justify-between w-full">
+            <div class="block sm:flex justify-between w-full">
               <router-link to="/">
                 <img
                   src="../assets/ec_new_logo_tags_small.svg"
@@ -16,7 +16,7 @@
                 />
               </router-link>
             </div>
-            <div class="space-x-8 md:flex md:ml-10">
+            <div class="hidden md:flex space-x-8 md:ml-10">
               <a
                 href="/#services"
                 class="text-base font-medium text-emiyablack hover:text-gray-300"
@@ -28,7 +28,7 @@
                 href="/#about"
                 class="text-base font-medium text-emiyablack hover:text-gray-300"
                 aria-label="Section titled about"
-                >About</a
+                >Contact</a
               >
             </div>
           </div>

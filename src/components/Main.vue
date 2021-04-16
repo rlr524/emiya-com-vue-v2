@@ -27,35 +27,6 @@
                   manage your web and mobile app presence as well as handle
                   support of your technology back of the house.
                 </p>
-                <div class="mt-10 sm:mt-12">
-                  <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
-                    <div class="sm:flex">
-                      <div class="min-w-0 flex-1">
-                        <label for="email" class="sr-only">Email address</label>
-                        <input
-                          id="email"
-                          type="email"
-                          placeholder="Enter your email"
-                          class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-600 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                        />
-                      </div>
-                      <div class="mt-3 sm:mt-0 sm:ml-3">
-                        <button
-                          type="submit"
-                          class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-gray-600 to-emiyablue text-white font-medium hover:from-gray-500 hover:to-emiyablue80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                        >
-                          Get Started
-                        </button>
-                      </div>
-                    </div>
-                    <p class="mt-3 text-sm text-white sm:mt-4">
-                      Let's talk about what you need and how we can help. By
-                      providing your email address, you agree to receive emails
-                      from Emiya Consulting. Use the "Contact Us" link above if
-                      you wish to enter more detail about your needs.
-                    </p>
-                  </form>
-                </div>
               </div>
             </div>
             <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
@@ -80,6 +51,14 @@
 <script>
 export default {
   name: "Main",
+  data() {
+    return {
+      text: "",
+    };
+  },
+  methods: {
+    async postEmail() {},
+  },
 };
 </script>
 
