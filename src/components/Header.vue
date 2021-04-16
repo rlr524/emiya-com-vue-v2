@@ -9,6 +9,7 @@
           <div class="flex items-center flex-1">
             <div class="block sm:flex justify-between w-full">
               <router-link to="/">
+                <span class="sr-only">Emiya Consulting Home</span>
                 <img
                   src="../assets/ec_new_logo_tags_small.svg"
                   class="h-8 w-auto sm:h-10"
