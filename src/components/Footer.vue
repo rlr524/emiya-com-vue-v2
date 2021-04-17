@@ -1,12 +1,12 @@
 <template>
   <div id="footer">
-    <footer class="bg-gray-50" aria-labelledby="footerHeading">
+    <footer aria-labelledby="footerHeading">
       <h2 id="footerHeading" class="sr-only">Footer</h2>
       <div
-        class="max-w-md mx-auto pt-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8"
+        class="max-w-md mx-auto mt-6 pt-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8"
       >
         <div>
-          <div class="flex justify-center">
+          <div class="flex justify-left">
             <a
               href="https://www.facebook.com/emiyaconsulting"
               target="_blank"
@@ -69,9 +69,9 @@
             </a>
           </div>
         </div>
-        <div class="flex justify-center mt-12 border-t border-gray-200 py-8">
-          <p class="text-base text-gray-400 xl:text-center">
-            &copy; 2021 Emiya Consulting, LLC
+        <div class="flex justify-left mt-6 border-t border-gray-200 py-8">
+          <p class="text-sm text-gray-400 xl:text-left">
+            &copy; 2021 Emiya Consulting, LLC | PO Box 498 Issaquah, WA 98027
           </p>
         </div>
       </div>
