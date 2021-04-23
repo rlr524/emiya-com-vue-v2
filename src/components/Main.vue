@@ -37,7 +37,7 @@
                 <img
                   class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-full lg:max-w-none"
                   src="../assets/illustration_main.svg"
-                  alt=""
+                  alt="Main section illustration - Emiya Consulting, Web site design and development, mobile app development, and small business technology consulting in the Central Puget Sound area"
                 />
               </div>
             </div>
