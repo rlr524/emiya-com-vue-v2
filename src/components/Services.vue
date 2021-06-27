@@ -3,15 +3,37 @@
     <!-- Services section  -->
     <div class="relative bg-white py-16 sm:py-24 lg:py-32">
       <div
-        class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
+        class="
+          mx-auto
+          max-w-md
+          px-4
+          text-center
+          sm:max-w-3xl
+          sm:px-6
+          lg:px-8
+          lg:max-w-7xl
+        "
       >
         <h2
-          class="text-base font-semibold tracking-wider text-emiyablue uppercase"
+          class="
+            text-base
+            font-semibold
+            tracking-wider
+            text-emiyablue
+            uppercase
+          "
         >
           Services
         </h2>
         <p
-          class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
+          class="
+            mt-2
+            text-3xl
+            font-extrabold
+            text-gray-900
+            tracking-tight
+            sm:text-4xl
+          "
         >
           Your web and mobile app needs in one place
         </p>
@@ -28,7 +50,17 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        p-3
+                        bg-gradient-to-r
+                        from-emiyablue80
+                        to-emiyablue
+                        rounded-md
+                        shadow-lg
+                      "
                     >
                       <!-- Heroicon name: cloud-upload -->
                       <svg
@@ -49,7 +81,13 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
+                    class="
+                      mt-8
+                      text-lg
+                      font-medium
+                      text-gray-900
+                      tracking-tight
+                    "
                   >
                     Cloud First
                   </h3>
@@ -67,7 +105,17 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        p-3
+                        bg-gradient-to-r
+                        from-emiyablue80
+                        to-emiyablue
+                        rounded-md
+                        shadow-lg
+                      "
                     >
                       <!-- Heroicon name: lock-closed -->
                       <svg
@@ -88,7 +136,13 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
+                    class="
+                      mt-8
+                      text-lg
+                      font-medium
+                      text-gray-900
+                      tracking-tight
+                    "
                   >
                     Security and Resiliency
                   </h3>
@@ -107,7 +161,17 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        p-3
+                        bg-gradient-to-r
+                        from-emiyablue80
+                        to-emiyablue
+                        rounded-md
+                        shadow-lg
+                      "
                     >
                       <!-- Heroicon name: refresh -->
                       <svg
@@ -128,7 +192,13 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
+                    class="
+                      mt-8
+                      text-lg
+                      font-medium
+                      text-gray-900
+                      tracking-tight
+                    "
                   >
                     Responsive and Accessible
                   </h3>
@@ -147,7 +217,17 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        p-3
+                        bg-gradient-to-r
+                        from-emiyablue80
+                        to-emiyablue
+                        rounded-md
+                        shadow-lg
+                      "
                     >
                       <!-- Heroicon name: shield-check -->
                       <svg
@@ -168,14 +248,20 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
+                    class="
+                      mt-8
+                      text-lg
+                      font-medium
+                      text-gray-900
+                      tracking-tight
+                    "
                   >
                     Modern Web and Mobile
                   </h3>
                   <p class="mt-5 text-base text-gray-500">
                     Your web apps are built using modern Vue.js or React single
                     page app (SPA) frameworks, styling and libraries. Your
-                    existing site (Wordpress, Drupal) can also maintained or
+                    existing site (Wordpress, Drupal) can also be maintained or
                     updated depending on your needs.
                   </p>
                 </div>
@@ -187,7 +273,17 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        p-3
+                        bg-gradient-to-r
+                        from-emiyablue80
+                        to-emiyablue
+                        rounded-md
+                        shadow-lg
+                      "
                     >
                       <!-- Heroicon name: cog -->
                       <svg
@@ -214,7 +310,13 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
+                    class="
+                      mt-8
+                      text-lg
+                      font-medium
+                      text-gray-900
+                      tracking-tight
+                    "
                   >
                     Powerful APIs
                   </h3>
@@ -233,7 +335,17 @@
                 <div class="-mt-6">
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-emiyablue80 to-emiyablue rounded-md shadow-lg"
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        p-3
+                        bg-gradient-to-r
+                        from-emiyablue80
+                        to-emiyablue
+                        rounded-md
+                        shadow-lg
+                      "
                     >
                       <!-- Heroicon name: server -->
                       <svg
@@ -254,7 +366,13 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
+                    class="
+                      mt-8
+                      text-lg
+                      font-medium
+                      text-gray-900
+                      tracking-tight
+                    "
                   >
                     Modern, Performant Databases
                   </h3>
