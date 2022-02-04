@@ -11,13 +11,8 @@
                 mx-auto
                 max-w-md
                 px-4
-                sm:max-w-2xl
-                sm:px-6
-                sm:text-center
-                lg:px-0
-                lg:text-left
-                lg:flex
-                lg:items-center
+                sm:max-w-2xl sm:px-6 sm:text-center
+                lg:px-0 lg:text-left lg:flex lg:items-center
               "
             >
               <div class="lg:pl-16 lg:py-20">
@@ -27,8 +22,7 @@
                     text-4xl
                     tracking-tight
                     font-extrabold
-                    sm:mt-5
-                    sm:text-6xl
+                    sm:mt-5 sm:text-6xl
                     lg:mt-6
                     xl:text-5xl
                   "
@@ -50,8 +44,7 @@
                   class="
                     mt-3
                     text-base text-white
-                    sm:mt-5
-                    sm:text-xl
+                    sm:mt-5 sm:text-xl
                     lg:text-lg
                     xl:text-xl
                   "
@@ -69,10 +62,8 @@
                   mx-auto
                   max-w-md
                   px-4
-                  sm:max-w-2xl
-                  sm:px-6
-                  lg:max-w-none
-                  lg:px-0
+                  sm:max-w-2xl sm:px-6
+                  lg:max-w-none lg:px-0
                 "
               >
                 <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
