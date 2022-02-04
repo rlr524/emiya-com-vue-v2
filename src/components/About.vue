@@ -44,7 +44,9 @@
           language, as well as mobile iOS apps. I can also consult on and
           support hardware (network, POS) build out, vendor selection and
           general tech needs.
-          <a href="contact">Let us know how we can work together.</a>
+          <a class="underline font-bold" href="contact"
+            >Let us know how we can work together.</a
+          >
         </p>
       </div>
     </div>
