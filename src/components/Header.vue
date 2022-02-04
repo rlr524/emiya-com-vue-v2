@@ -39,8 +39,8 @@
                 >Services</a
               >
 
-              <a
-                href="/contact"
+              <router-link
+                to="contact"
                 class="
                   text-base
                   font-medium
@@ -48,7 +48,7 @@
                   hover:text-gray-300
                 "
                 aria-label="Section titled about"
-                >Contact</a
+                >Contact</router-link
               >
             </div>
           </div>
