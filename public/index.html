@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title><%= htmlWebpackPlugin.options.title %></title>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
 			async
@@ -66,13 +67,7 @@
 		/>
 		<link rel="icon" href="favicon.ico" />
 		<link rel="icon" href="favicon.svg" type="image/svg+xml" />
-		<script
-			src="https://kit.fontawesome.com/9710179c19.js"
-			crossorigin="anonymous"
-		></script>
-
 		<link rel="canonical" href="https://www.emiyaconsulting.com/" />
-		<title><%= htmlWebpackPlugin.options.title %></title>
 	</head>
 	<body>
 		<noscript>
@@ -84,5 +79,9 @@
 		</noscript>
 		<div id="app"></div>
 		<!-- built files will be auto injected -->
+		<script
+			src="https://kit.fontawesome.com/9710179c19.js"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
