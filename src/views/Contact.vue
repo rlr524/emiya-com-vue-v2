@@ -2,6 +2,9 @@
   <div id="contact">
     <!-- Contact page  -->
     <div class="relative overflow-hidden bg-white py-16 sm:py-24 lg:py-32">
+        <div class="mx-auto max-w-md px-4 text-center text-xl font-bolt sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+    <span class="text-red-600">**</span>At this time, Emiya Consulting is not taking on new clients. Thank you for your interest.<span class="text-red-600">**</span>
+    </div>
       <div
         class="
           mx-auto
