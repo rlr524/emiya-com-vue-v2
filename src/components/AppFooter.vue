@@ -48,7 +48,7 @@
         </div>
         <div class="flex justify-left mt-6 border-t border-gray-200 py-8">
           <p class="text-sm text-gray-400 xl:text-left">
-            &copy; 2022 Emiya Consulting, LLC | PO Box 498 Issaquah, WA 98027
+            &copy; 2025 Emiya Consulting, LLC | PO Box 498 Issaquah, WA 98027
           </p>
         </div>
       </div>
