@@ -1,4 +1,9 @@
 <template>
+	<!--
+  Copyright 2026
+  Emiya Consulting LLC 
+  rob@emiyaconsulting.com
+  -->
 	<div id="contact">
 		<!-- Contact page  -->
 		<div class="relative overflow-hidden bg-white py-16 sm:py-24 lg:py-32">

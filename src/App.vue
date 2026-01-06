@@ -1,4 +1,9 @@
 <template>
+	<!--
+  Copyright 2026
+  Emiya Consulting LLC 
+  rob@emiyaconsulting.com
+  -->
 	<div id="app">
 		<div class="bg-white">
 			<div class="relative overflow-hidden">
